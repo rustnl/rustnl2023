@@ -57,6 +57,32 @@ html {
   box-sizing: inherit;
 }
 
+@keyframes wobble {
+  0% {
+    scale: 0.33;
+    transform: none
+  }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+  }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+  }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+  }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+  }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+  }
+  100% {
+    transform: none;
+    scale: 1;
+  }
+}
+
 :root {
   --color-primary-400: #b33119;
   --color-primary-500: #A9270F;
@@ -85,7 +111,7 @@ html {
   :root {
     --font-size-scale: 1.75;
     --font-size-md: 1.5rem;
-    --logo: 16rem;
+    --logo: 12rem;
   }
 }
 
@@ -95,10 +121,6 @@ body {
   font-family: var(--font-family-body);
   font-size: var(--font-size-md);
   line-height: var(--line-height);
-}
-
-a {
-  color: var(--color-neutral-400);
 }
 
 b,
@@ -257,6 +279,9 @@ footer a {
 }
 
 .hero .date::before {
+  animation-name: wobble;
+  animation-duration: 3500ms;
+  animation-timing-function: ease-in-out;
   background-image: url('svg/ferres.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -325,50 +350,3 @@ footer a {
   max-width: 32rem;
 }
 
-/* .sponsors .logo {
-  max-width: 32rem;
-  display: block;
-}
-
-.sponsors .logo img {
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-.sponsors .row {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
-.sponsors .row.silver {
-  flex-wrap: wrap;
-}
-
-.sponsors .silver .logo img {
-  max-width: 12rem;
-  margin-inline: auto;
-  display: block;
-}
-
-.sponsors .row.organized,
-.sponsors .row.headline {
-  display: flex;
-  justify-content: center;
-}
-
-.sponsors .organized img {
-  max-width: 9rem;  
-}
-
-.sponsors .row.supported {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.sponsors .supported img {
-  max-width: 16rem;
-  margin-inline: auto;
-  display: block;
-}
- */
