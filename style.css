@@ -59,6 +59,7 @@ html {
 
 :root {
   --color-primary-400: #b33119;
+  --color-primary-500: #A9270F;
   --color-secondary-300: #f74C00;
   --color-secondary-400: #e7430f;
   --color-neutral-500: #f7c59f;
@@ -146,6 +147,10 @@ ul {
   font-size: var(--font-size-2xl);
 }
 
+.secondary-400 {
+  color: var(--color-secondary-400);
+}
+
 .button-group {
   display: flex;
   flex-wrap: wrap;
@@ -224,6 +229,7 @@ footer a {
 .hero .date {
   background-color: var(--color-secondary-400);
   color: var(--color-neutral-400);
+  margin-block-end: 0.5rem;
   padding-block: 0.5rem;
   padding-inline: 1.5rem;
   position: relative;
@@ -257,6 +263,17 @@ footer a {
   background-color: var(--color-primary-400);
   color: var(--color-neutral-400);
   padding: 1.5rem;
+  position: relative;
+  z-index: 0;
+}
+
+.info::after {
+  background-color: var(--color-primary-500);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .sponsors > div {
@@ -271,7 +288,7 @@ footer a {
 
 .sponsors .row {
   display: grid;
-  gap: 1.5rem;
+  gap: 0.75rem;
 }
 
 .sponsors .row.silver {
