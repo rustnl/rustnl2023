@@ -123,6 +123,10 @@ body {
   line-height: var(--line-height);
 }
 
+a {
+  color: var(--color-neutral-400);
+}
+
 b,
 strong {
   font-weight: 700;
