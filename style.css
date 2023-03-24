@@ -87,10 +87,6 @@ body {
   line-height: var(--line-height);
 }
 
-p {
-  max-width: 65ch;
-}
-
 b,
 strong {
   font-weight: 700;
@@ -262,9 +258,14 @@ footer a {
 .info {
   background-color: var(--color-primary-400);
   color: var(--color-neutral-400);
-  padding: 1.5rem;
+  padding: 3rem 1.5rem;
   position: relative;
   z-index: 0;
+}
+
+.info > div {
+  max-width: 36rem;
+  margin-inline: auto;
 }
 
 .info::after {
@@ -282,7 +283,7 @@ footer a {
 }
 
 .sponsors .logo {
-  max-width: 375px;
+  max-width: 32rem;
   display: block;
 }
 
@@ -293,12 +294,19 @@ footer a {
 }
 
 .sponsors .row {
-  display: grid;
-  gap: 0.75rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .sponsors .row.silver {
-  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+}
+
+.sponsors .silver .logo img {
+  max-width: 12rem;
+  margin-inline: auto;
+  display: block;
 }
 
 .sponsors .row.organized,
@@ -313,5 +321,11 @@ footer a {
 
 .sponsors .row.supported {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.sponsors .supported img {
+  max-width: 16rem;
+  margin-inline: auto;
+  display: block;
 }
 
