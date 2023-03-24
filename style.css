@@ -85,7 +85,7 @@ html {
   :root {
     --font-size-scale: 1.75;
     --font-size-md: 1.5rem;
-    --logo: 12rem;
+    --logo: 16rem;
   }
 }
 
@@ -95,6 +95,10 @@ body {
   font-family: var(--font-family-body);
   font-size: var(--font-size-md);
   line-height: var(--line-height);
+}
+
+a {
+  color: var(--color-neutral-400);
 }
 
 b,
