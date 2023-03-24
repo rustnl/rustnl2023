@@ -125,6 +125,7 @@ body {
 
 a {
   color: var(--color-neutral-400);
+  text-decoration: underline;
 }
 
 b,
