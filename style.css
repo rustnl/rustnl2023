@@ -66,22 +66,49 @@ html {
     transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
   }
   30% {
-    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+    transform: translate3d(40%, 0, 0) rotate3d(0, 0, 1, 3deg)
   }
   45% {
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+    transform: translate3d(-35%, 0, 0) rotate3d(0, 0, 1, -3deg)
   }
   60% {
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+    transform: translate3d(30%, 0, 0) rotate3d(0, 0, 1, 2deg)
   }
   75% {
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -1deg)
   }
   100% {
     transform: none;
     scale: 1;
   }
 }
+
+/* @keyframes wobble {
+  0% {
+    scale: 0.25;
+    translate: -100px -50%;
+  }
+
+  25% {
+    scale: 0.5;
+    translate: 100px -50%;
+  }
+
+  50% {
+    scale: 0.75;
+    translate: -100px -50%;
+  }
+
+  75% {
+    scale: 1;
+    translate: 100px -50%;
+  }
+
+  100% {
+    scale: 1;
+    translate: -50 -50%;
+  }
+} */
 
 :root {
   --color-primary-400: #b33119;
