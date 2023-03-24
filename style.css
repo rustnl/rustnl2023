@@ -1,0 +1,293 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-primary-400: #b33119;
+  --color-secondary-300: #f74C00;
+  --color-secondary-400: #e7430f;
+  --color-neutral-500: #f7c59f;
+  --color-neutral-400: #fbcfa9;
+  --color-accent-400: #f49600;
+
+  --font-family-body: 'Helvetica', sans-serif;
+  --font-family-display: 'Alfa Slab One', cursive;
+
+  --font-size-scale: 1.5;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: calc(var(--font-size-md) * var(--font-size-scale));
+  --font-size-xl: calc(var(--font-size-lg) * var(--font-size-scale));
+  --font-size-2xl: calc(var(--font-size-xl) * var(--font-size-scale));
+
+  --line-height: 1.5;
+}
+
+body {
+  background-color: var(--color-neutral-400);
+  color: var(--color-primary-400);
+  font-family: var(--font-family-body);
+  font-size: 1rem;
+  line-height: var(--line-height);
+}
+
+p {
+  max-width: 65ch;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+ul {
+  list-style: disc;
+  padding-inline-start: var(--font-size-md);
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 90rem;
+  padding-inline: 0.75rem;
+
+}
+.flow-sm {
+  --flow: 0.75rem;
+}
+
+.flow-md {
+  --flow: 1.5rem;
+}
+
+.flow-lg {
+  --flow: 3rem;
+}
+
+.flow > * + * {
+  margin-top: var(--flow);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-display {
+  font-family: var(--font-family-display);
+}
+
+.font-md {
+  font-size: var(--font-size-md);
+}
+
+.font-lg {
+  font-size: var(--font-size-lg);
+}
+
+.font-xl {
+  font-size: var(--font-size-xl);
+}
+
+.font-2xl {
+  font-size: var(--font-size-2xl);
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.button {
+  align-items: center;
+  appearance: none;
+  color: var(--color-primary-400);
+  cursor: pointer;
+  display: flex;
+  height: 3rem;
+  line-height: 1;
+  padding-inline: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.button-primary {
+  background-color: var(--color-accent-400);
+}
+
+.button-secondary {
+  border-color: var(--color-accent-400);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.5rem;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+}
+
+header .logo {
+  max-width: 9rem;
+  width: 100%;
+}
+
+header .logo svg {
+  vertical-align: middle;
+}
+
+footer {
+  background-color: var(--color-primary-400);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 4.5rem;
+  padding-block: 1.5rem;
+}
+
+footer a {
+  color: var(--color-neutral-400);
+  text-decoration: none;
+}
+
+.hero {
+  align-items: center;
+  border-bottom: 1px solid var(--color-primary-400);
+  border-top: 1px solid var(--color-primary-400);
+  display: flex;
+  flex-direction: column;
+  padding-block-start: 6rem;
+  padding-block-end: 4.5rem;
+}
+
+.hero .date {
+  background-color: var(--color-secondary-400);
+  color: var(--color-neutral-400);
+  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  position: relative;
+  z-index: 0;
+}
+
+.hero .date::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  background-color: var(--color-secondary-300);
+  z-index: -1;
+}
+
+.hero .date::before {
+  background-image: url('svg/ferres.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  height: 7.5rem;
+  left: 50%;
+  position: absolute;
+  top: -1rem;
+  translate: -50% -50%;
+  width: 7.5rem;
+}
+
+.info {
+  background-color: var(--color-primary-400);
+  color: var(--color-neutral-400);
+  padding: 1.5rem;
+}
+
+.sponsors > div {
+  border-bottom: 1px solid var(--color-primary-400);
+  padding-block-end: 3rem;
+}
+
+.sponsors .logo {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.sponsors .row {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.sponsors .row.silver {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sponsors .row.organized {
+  display: flex;
+  justify-content: center;
+}
+
+.sponsors .organized img {
+  max-width: 9rem;  
+}
+
+.sponsors .row.supported {
+  grid-template-columns: repeat(2, 1fr);
+}
+
