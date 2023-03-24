@@ -77,13 +77,23 @@ html {
   --font-size-2xl: calc(var(--font-size-xl) * var(--font-size-scale));
 
   --line-height: 1.5;
+
+  --logo: 9rem;
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --font-size-scale: 1.75;
+    --font-size-md: 1.5rem;
+    --logo: 12rem;
+  }
 }
 
 body {
   background-color: var(--color-neutral-400);
   color: var(--color-primary-400);
   font-family: var(--font-family-body);
-  font-size: 1rem;
+  font-size: var(--font-size-md);
   line-height: var(--line-height);
 }
 
@@ -186,10 +196,11 @@ header {
   display: flex;
   justify-content: space-between;
   padding-block: 1.5rem;
+  gap: 1.5rem;
 }
 
 header .logo {
-  max-width: 9rem;
+  max-width: var(--logo);
   width: 100%;
 }
 
@@ -201,7 +212,7 @@ footer {
   background-color: var(--color-primary-400);
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 1rem;
   justify-content: center;
   margin-top: 4.5rem;
   padding-block: 1.5rem;
@@ -209,7 +220,7 @@ footer {
 
 footer a {
   color: var(--color-neutral-400);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .hero {
@@ -264,7 +275,7 @@ footer a {
 }
 
 .info > div {
-  max-width: 36rem;
+  max-width: 42rem;
   margin-inline: auto;
 }
 
