@@ -293,7 +293,35 @@ footer a {
   padding-block-end: 3rem;
 }
 
+.sponsors .row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
 .sponsors .logo {
+  display: block;
+}
+
+.sponsors .logo img {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.sponsors .logo.supported {
+  max-width: 16rem;
+}
+
+.sponsors .logo.organized {
+  max-width: 9rem;
+}
+
+.sponsors .logo.headline {
+  max-width: 32rem;
+}
+
+/* .sponsors .logo {
   max-width: 32rem;
   display: block;
 }
@@ -339,4 +367,4 @@ footer a {
   margin-inline: auto;
   display: block;
 }
-
+ */
