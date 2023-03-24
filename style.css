@@ -282,7 +282,13 @@ footer a {
 }
 
 .sponsors .logo {
-  max-width: 100%;
+  max-width: 375px;
+  display: block;
+}
+
+.sponsors .logo img {
+  width: 100%;
+  height: auto;
   vertical-align: middle;
 }
 
@@ -295,7 +301,8 @@ footer a {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.sponsors .row.organized {
+.sponsors .row.organized,
+.sponsors .row.headline {
   display: flex;
   justify-content: center;
 }
