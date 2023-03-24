@@ -57,7 +57,7 @@ html {
   box-sizing: inherit;
 }
 
-@keyframes wobble {
+@keyframes ferres {
   0% {
     scale: 0.33;
     transform: none
@@ -82,33 +82,6 @@ html {
     scale: 1;
   }
 }
-
-/* @keyframes wobble {
-  0% {
-    scale: 0.25;
-    translate: -100px -50%;
-  }
-
-  25% {
-    scale: 0.5;
-    translate: 100px -50%;
-  }
-
-  50% {
-    scale: 0.75;
-    translate: -100px -50%;
-  }
-
-  75% {
-    scale: 1;
-    translate: 100px -50%;
-  }
-
-  100% {
-    scale: 1;
-    translate: -50 -50%;
-  }
-} */
 
 :root {
   --color-primary-400: #b33119;
@@ -306,9 +279,9 @@ footer a {
 }
 
 .hero .date::before {
-  animation-name: wobble;
+  animation-name: ferres;
   animation-duration: 3500ms;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-out;
   background-image: url('svg/ferres.svg');
   background-position: center;
   background-repeat: no-repeat;
