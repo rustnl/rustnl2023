@@ -303,9 +303,17 @@ footer a {
 .info {
   background-color: var(--color-primary-400);
   color: var(--color-neutral-400);
-  padding: 3rem 1.5rem;
+  padding: 3rem 1.5rem 3rem 1.5rem;
   position: relative;
   z-index: 0;
+}
+
+.info-image {
+  margin-top: 0px;
+}
+
+.info-image > img {
+  width: 100%;
 }
 
 .info > div {
