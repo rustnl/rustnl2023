@@ -308,6 +308,11 @@ footer a {
   z-index: 0;
 }
 
+.info.contact {
+  background-color: var(--color-secondary-300);
+  
+}
+
 .info-image {
   margin-top: 0px;
 }
@@ -328,6 +333,10 @@ footer a {
   inset: 0;
   position: absolute;
   z-index: -1;
+}
+
+.info.contact::after {
+  background-color: var(--color-secondary-400);
 }
 
 .sponsors > div {
