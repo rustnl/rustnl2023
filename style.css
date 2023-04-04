@@ -274,6 +274,21 @@ footer a {
   z-index: 0;
 }
 
+.sponsors-small .logo {
+  flex: 1;
+  max-width: 16rem;
+}
+
+.sponsors-small .logo.rustnl {
+  max-width: 5rem;
+}
+
+@media (min-width: 48rem) {
+  .sponsors-small .logo.rustnl {
+    max-width: 10rem;
+  }
+}
+
 .hero .date::after {
   content: '';
   position: absolute;
@@ -348,6 +363,7 @@ footer a {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .sponsors .logo {
