@@ -4,13 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RustNL 2023 Conference</title>
-  <meta property="og:image" content="https://2023.rustnl.org/images/logo-1000px.png" />
-  <meta name="description" content="RustNL 2023 Conference, OBA, Amsterdam, NL - May 10 2023" />
+  <title>RustNL 2023</title>
+  <meta name="description" content="RustNL 2023, OBA, Amsterdam, NL - May 10 2023" />
+  <link rel="icon" href="./svg/rustnl.svg" type="image/svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+
+  <meta property="twitter:site" content="@Rust_NL">
+  <meta name="twitter:card" content="summary_large_image">
+  </meta>
+  <meta property="og:url" content="https://2023.rustnl.org/" />
+  <meta property="og:title" content="RustNL 2023" />
+  <meta property="og:description" content="RustNL 2023, OBA, Amsterdam, NL - May 10 2023" />
+  <meta property="og:image" content="https://2023.rustnl.org/images/logo-1000px.png" />
+
 </head>
 
 <body>
@@ -98,19 +107,19 @@
             class="cls-8" />
         </svg>
       </div>
-      <a href="" class="button button-primary">Tickets</a>
+      <a href="https://www.eventbrite.nl/e/rustnl-2023-tickets-602420655397" class="button button-primary">Tickets</a>
     </header>
   </div>
 
   <main class="container">
     <div class="hero flow flow-md">
       <div>
-        <div class="date font-display font-xl">May 10th 2023</div>
+        <div class="date font-display font-xl">May 10 2023</div>
         <div class="location text-center font-display font-lg">OBA, Amsterdam, NL</div>
       </div>
       <div class="button-group">
-        <a href="" class="button button-primary">Tickets</a>
-        <a class="button button-secondary">Schedule</a>
+        <a href="https://www.eventbrite.nl/e/rustnl-2023-tickets-602420655397" class="button button-primary">Tickets</a>
+        <a href="#schedule" class="button button-secondary">Schedule</a>
       </div>
     </div>
     <div class="flow flow-md">
@@ -121,13 +130,13 @@
               join than we had places available. At RustNL 2023 we welcome over 200 Rustaceans for a full day of
               Rust!</strong></p>
           <ul>
-            <li>One day conference, 9-18h</li>
+            <li>One day on-site event, 9-18h</li>
             <li>One track ~ 8 talks</li>
             <li>Lunch and closing drinks included</li>
             <li>Interaction space and plenty of breaks to talk</li>
             <li>Paid tickets for companies and individuals</li>
             <li>Low-priced tickets available for students</li>
-            <li>Held close to the central station</li>
+            <li>Held close to Amsterdam central station</li>
           </ul>
           <p>Please note: although we're called "RustNL" everyone is welcome to join us in Amsterdam, not just Dutchies.
           </p>
@@ -135,6 +144,23 @@
       </div>
       <div class="info-image">
         <img src="./images/oba3.jpg" />
+      </div>
+    </div>
+
+    <div class="flow flow-md">
+      <h3 id="contact" class="text-center font-display font-lg secondary-400">Contact</h3>
+      <div class="info contact">
+        <div class="flow flow-md">
+          <p>
+            The event will take place at OBA Oosterdok/Congres: <br />
+            Oosterdokskade 143<br />
+            1011 DK Amsterdam<br />
+          </p>
+          <p>
+            Contact us via <a
+              href="mailto:2023@rustnl.org">2023@rustnl.org</a>!
+          </p>
+        </div>
       </div>
     </div>
 
@@ -152,46 +178,49 @@
       <!--div>
           <div class="flow flow-sm">
             <h3 class="text-center font-display secondary-400">Silver sponsors</h3>
-            <div class="row silver">
-              <a class="logo" href=""><img src="./images/sponsors/a.png" alt=""></a>
-              <a class="logo" href=""><img src="./images/sponsors/a.png" alt=""></a>
-              <a class="logo" href=""><img src="./images/sponsors/a.png" alt=""></a>
-              <a class="logo" href=""><img src="./images/sponsors/a.png" alt=""></a>
-              <a class="logo" href=""><img src="./images/sponsors/a.png" alt=""></a>              
+            <div class="row sponsors-small">
+              <a class="logo" href=""><img src="./images/sponsors/nlnetlabs.png" alt=""></a>
+              <a class="logo" href=""><img src="./images/sponsors/nlnetlabs.png" alt=""></a>
+              <a class="logo" href=""><img src="./images/sponsors/nlnetlabs.png" alt=""></a>           
             </div>
           </div>
         </div-->
       <div>
         <div class="flow flow-sm">
           <h3 class="text-center font-display secondary-400">Organized by</h3>
-          <div class="row">
-            <a href="https://rustnl.org/" class="logo organized"><img src="./images/sponsors/rustnl-icon.png"
-                alt="RustNL"></a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="flow flow-sm">
-          <h3 class="text-center font-display secondary-400">Supported by</h3>
-          <div class="row">
-            <a href="https://nlnetlabs.nl/" class="logo supported"><img src="./images/sponsors/nlnetlabs.png"
+          <div class="row sponsors-small">
+            <a href="https://nlnetlabs.nl/" class="logo"><img src="./images/sponsors/nlnetlabs.png"
                 alt="NLnet Labs"></a>
-            <a href="https://tweedegolf.nl/" class="logo supported"><img src="./images/sponsors/tweede-golf-v2.png"
+            <a href="https://rustnl.org/" class="logo rustnl"><img src="./images/sponsors/rustnl-icon.png"
+                alt="RustNL"></a>
+            <a href="https://tweedegolf.nl/" class="logo"><img src="./images/sponsors/tweede-golf-v2.png"
                 alt="Tweede golf"></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="flow flow-md schedule">
+    <div class="flow flow-md">
+      <h3 class="text-center font-display font-lg secondary-400">Bringing together the Rust community</h3>
+      <div class="info">
+        <div class="flow flow-md">
+          <p>Not only the Dutch Rust community will gather during RustNL 2023. Rust open-source developers brought
+            together by Futurewei will join in and work together on the future of UI frameworks in the Rust ecosystem
+            during the week of the event.</p>
+          <p>That group includes members of the Rust project teams (Library, Lang, Compiler, Dev tools etc) who will
+            also be around and join the event.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="schedule" class="schedule flow flow-md">
       <h3 class="text-center font-display font-lg secondary-400">Schedule</h3>
       <div class="info">
         <div class="flow flow-md">
-          <table data-endline="25" data-startline="9" class="part in-view">
+          <table class="part in-view" data-startline="9" data-endline="25">
             <thead>
               <tr>
-                <th><span data-position="94" data-size="10">Start</span><br><span data-position="110"
-                    data-size="1"></span><small><span data-position="118" data-size="3">(CET)</span></small><span
-                    data-position="129" data-size="1"></span></th>
+                <th><span data-position="94" data-size="10">Start</span><br><small><span data-position="117"
+                      data-size="5">(CET)</span></small></th>
                 <th><span data-position="132" data-size="4">Talk</span></th>
               </tr>
             </thead>
@@ -273,17 +302,7 @@
         </div>
       </div>
     </div>
-    <div class="flow flow-md">
-      <h3 class="text-center font-display font-lg secondary-400">Bringing together the Rust community</h3>
-      <div class="info">
-        <div class="flow flow-md">
-          <p>Not only the Dutch Rust community will gather during RustNL 2023. Rust open-source developers brought
-            together by Futurewei will join in and work together on the future of UI frameworks in the Rust ecosystem
-            during the week of the conference.</p>
-          <p>Members of the Rust library team will also be around and join the conference.</p>
-        </div>
-      </div>
-    </div>
+
     <div class="flow flow-md">
       <h3 class="text-center font-display font-lg secondary-400">About RustNL</h3>
       <div class="info">
@@ -302,10 +321,10 @@
     </div>
   </main>
   <footer>
-    <div><a href="mailto:erik@rustnl.org">Contact</a></div>
+    <div><a href="#contact">Contact</a></div>
     <div><a href="https://www.rust-lang.org/policies/code-of-conduct">Code of conduct</a></div>
     <div><a href="https://twitter.com/Rust_NL">Twitter</a></div>
-    <div><a href="#">Mastodon</a></div>
+    <div><a href="https://fosstodon.org/@rustnl">Mastodon</a></div>
   </footer>
 </body>
 
