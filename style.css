@@ -363,3 +363,33 @@ footer a {
   max-width: 32rem;
 }
 
+.schedule table {
+  text-align: left;
+}
+
+.schedule table th {
+  font-style: italic;
+}
+
+.schedule table th:first-child {
+  min-width: 6rem;
+}
+
+.schedule table small {
+  font-size: smaller;
+}
+
+.schedule table tr {
+  border-bottom: 1px dashed var(--color-neutral-500);
+  padding: 1rem;
+}
+
+.schedule table th,
+.schedule table td {
+  padding: 1rem;
+}
+
+.schedule table em {
+  font-style: italic;
+}
+
