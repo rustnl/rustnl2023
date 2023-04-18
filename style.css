@@ -418,3 +418,19 @@ footer a {
   font-style: italic;
 }
 
+.speakers .info .flow img {
+  border-radius: 50%;
+}
+
+.speakers hr {
+  border-color: var(--color-neutral-400);
+}
+
+.speakers .info .flow h3 {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.speakers .info .flow em {
+  font-style: italic;
+}
