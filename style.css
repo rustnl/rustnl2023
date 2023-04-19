@@ -420,6 +420,7 @@ footer a {
 
 .speakers .info .flow img {
   border-radius: 50%;
+  max-width: 250px;
 }
 
 .speakers hr {
